@@ -17,6 +17,17 @@ namespace CalculatorLibrary
             get;
             set;
         }
-       
+        public void Cube()
+        {
+            Console.Write("Enter the Number : ");
+            Number = double.Parse(Console.ReadLine());
+            result = Math.Ceiling(Math.Pow(Number, (double)1 / 3));
+
+        }
+        public void sqrt()
+        {
+            double Number = 144;
+            Console.WriteLine(Math.Sqrt(Number));
+        }
     }
 }
